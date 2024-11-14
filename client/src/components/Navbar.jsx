@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+// import { NavLink } from "react-router-dom";
+// import { AppRoutes } from "../routes";
 import ObatLogo from "../../src/assets/obatin.svg";
 import Avatar from "../utils/Avatar";
 import Cart from "../utils/Cart";
@@ -18,7 +20,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -39,21 +41,24 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <a className="active">Beranda</a>
               </li>
               <li>
-                <a>Parent</a>
+                <a>Produk</a>
               </li>
               <li>
-                <a>Item 3</a>
+                <a>Konsultasi</a>
+              </li>
+              <li>
+                <a>Transaksi</a>
               </li>
             </ul>
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+        <div className="navbar-center hidden md:flex">
+          <ul className="menu menu-horizontal px-1 gap-1">
             <li>
-              <a>Beranda</a>
+              <a className="active">Beranda</a>
             </li>
             <li>
               <a>Produk</a>
@@ -62,13 +67,14 @@ const Navbar = () => {
               <a>Konsultasi</a>
             </li>
             <li>
-              <a>Blog</a>
+              <a>Transaksi</a>
             </li>
           </ul>
         </div>
         <Cart items={items} total={total} hidden />
         <Avatar src={ObatLogo} />
       </div>
+      {/* <AppRoutes /> */}
     </>
   );
 };

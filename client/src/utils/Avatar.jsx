@@ -1,4 +1,4 @@
-export default function Avatar({ src }) {
+export default function Avatar({ alt, src }) {
   return (
     <div className="dropdown dropdown-end">
       <div
@@ -7,7 +7,7 @@ export default function Avatar({ src }) {
         className="btn btn-ghost btn-circle avatar"
       >
         <div className="w-10 rounded-full">
-          <img alt={src} src={src} />
+          <img alt={alt} src={src} />
         </div>
       </div>
       <ul
