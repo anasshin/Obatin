@@ -1,8 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Jumbotron from "../components/Jumbotron";
-// import CardProduct from "../utils/CardProduct";
-// import "./Home.css"; // Import CSS file
+import About from "../components/About";
 
 export default function Home() {
   return (
@@ -10,6 +9,7 @@ export default function Home() {
       <Navbar />
       <Jumbotron />
       {/* <CardProduct /> */}
+      <About />
       <Footer />
     </div>
   );

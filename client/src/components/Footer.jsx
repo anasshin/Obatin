@@ -1,15 +1,24 @@
 import { Facebook, Instagram, Mail, Twitter } from "lucide-react";
 import Input from "../utils/Input";
+import { Link } from "react-router-dom";
 // import mail from "../assets/icons/chat_1_fill.svg";
 export default function footer() {
   return (
-    <footer className="footer bg-base-200 text-base-content p-4 md:p-10 mt-4 justify-between">
+    <footer className="footer bg-base-200 text-base-content p-4 md:p-10  justify-between">
       <nav>
         <h6 className="footer-title">ObatIn</h6>
-        <a className="link link-hover">Beranda</a>
-        <a className="link link-hover">Produk</a>
-        <a className="link link-hover">Konsultasi</a>
-        <a className="link link-hover">Keranjang</a>
+        <Link to={"/"} className="link link-hover">
+          Beranda
+        </Link>
+        <Link to={"/product"} className="link link-hover">
+          Produk
+        </Link>
+        <Link to={"/consult"} className="link link-hover">
+          Konsultasi
+        </Link>
+        <Link to={"/transaction"} className="link link-hover">
+          Transaksi
+        </Link>
       </nav>
       <nav>
         <h6 className="footer-title">Ikuti Kami!</h6>
@@ -36,11 +45,6 @@ export default function footer() {
             <span className="label-text">Enter your email address</span>
           </label>
           <div className="join">
-            {/* <input
-              type="text"
-              placeholder="username@site.com"
-              className="input input-bordered join-item"
-            /> */}
             <Input
               // icon={mail}
               type={"email"}

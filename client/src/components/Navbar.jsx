@@ -1,6 +1,4 @@
-// import React, { useState } from "react";
-// import { NavLink } from "react-router-dom";
-// import { AppRoutes } from "../routes";
+import { Link } from "react-router-dom";
 import ObatLogo from "../../src/assets/obatin.svg";
 import Avatar from "../utils/Avatar";
 import Cart from "../utils/Cart";
@@ -12,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 px-4">
         <div className="flex-1">
           <a className="btn btn-link">
             <img src={ObatLogo} alt="Logo ObatIn" />
@@ -41,16 +39,18 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a className="active">Beranda</a>
+                <Link to="/" className="active">
+                  Beranda
+                </Link>
               </li>
               <li>
-                <a>Produk</a>
+                <Link to="/product">Produk</Link>
               </li>
               <li>
-                <a>Konsultasi</a>
+                <Link to={"/consult"}>Konsultasi</Link>
               </li>
               <li>
-                <a>Transaksi</a>
+                <Link to={"/transaction"}>Transaksi</Link>
               </li>
             </ul>
           </div>
@@ -58,16 +58,18 @@ const Navbar = () => {
         <div className="navbar-center hidden md:flex">
           <ul className="menu menu-horizontal px-1 gap-1">
             <li>
-              <a className="active">Beranda</a>
+              <Link to="/" className="active">
+                Beranda
+              </Link>
             </li>
             <li>
-              <a>Produk</a>
+              <Link to="/product">Produk</Link>
             </li>
             <li>
-              <a>Konsultasi</a>
+              <Link to={"/consult"}>Konsultasi</Link>
             </li>
             <li>
-              <a>Transaksi</a>
+              <Link to={"/transaction"}>Transaksi</Link>
             </li>
           </ul>
         </div>

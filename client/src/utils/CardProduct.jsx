@@ -1,6 +1,6 @@
 import Favourite from "../assets/icons/heart_line.svg";
 
-export default function Card({ src, title, price }) {
+export default function CardProduct({ src, title, price }) {
   return (
     <div className="card rounded-lg bg-white">
       <button className="btn btn-link absolute right-0  hover:fill-red-500">

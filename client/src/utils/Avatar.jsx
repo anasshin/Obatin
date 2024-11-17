@@ -1,6 +1,6 @@
 export default function Avatar({ alt, src }) {
   return (
-    <div className="dropdown dropdown-end">
+    <div className="dropdown dropdown-end me-4">
       <div
         tabIndex={0}
         role="button"
