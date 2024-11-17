@@ -5,3 +5,4 @@ const Consult = () => {
     </div>
   );
 };
+export default Consult;

@@ -10,13 +10,13 @@ export default function footer() {
         <Link to={"/"} className="link link-hover">
           Beranda
         </Link>
-        <Link to={"/product"} className="link link-hover">
+        <Link to={"/products"} className="link link-hover">
           Produk
         </Link>
         <Link to={"/consult"} className="link link-hover">
           Konsultasi
         </Link>
-        <Link to={"/transaction"} className="link link-hover">
+        <Link to={"/transactions"} className="link link-hover">
           Transaksi
         </Link>
       </nav>
