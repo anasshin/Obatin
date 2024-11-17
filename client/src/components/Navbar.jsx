@@ -44,13 +44,13 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/product">Produk</Link>
+                <Link to="/products">Produk</Link>
               </li>
               <li>
                 <Link to={"/consult"}>Konsultasi</Link>
               </li>
               <li>
-                <Link to={"/transaction"}>Transaksi</Link>
+                <Link to={"/transactions"}>Transaksi</Link>
               </li>
             </ul>
           </div>
@@ -63,13 +63,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/product">Produk</Link>
+              <Link to="/products">Produk</Link>
             </li>
             <li>
               <Link to={"/consult"}>Konsultasi</Link>
             </li>
             <li>
-              <Link to={"/transaction"}>Transaksi</Link>
+              <Link to={"/transactions"}>Transaksi</Link>
             </li>
           </ul>
         </div>

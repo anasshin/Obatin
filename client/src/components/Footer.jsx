@@ -1,7 +1,7 @@
 import { Facebook, Instagram, Mail, Twitter } from "lucide-react";
 import Input from "../utils/Input";
 import { Link } from "react-router-dom";
-// import mail from "../assets/icons/chat_1_fill.svg";
+
 export default function footer() {
   return (
     <footer className="footer bg-base-200 text-base-content p-4 md:p-10  justify-between">
