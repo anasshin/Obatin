@@ -1,4 +1,4 @@
-export default function Cart({ items, total }) {
+export default function Cart({ items }) {
   return (
     <div className="flex-none">
       <div className="dropdown dropdown-end">
@@ -27,7 +27,6 @@ export default function Cart({ items, total }) {
         >
           <div className="card-body">
             <span className="text-lg font-bold">{items} Items</span>
-            <span className="text-info">Subtotal: {total}</span>
             <div className="card-actions">
               <button className="btn btn-primary btn-block">View cart</button>
             </div>
