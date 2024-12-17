@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Login() {
   return (
     <div className="flex h-screen items-center justify-center">
-      <div className="w-96 border-solid border-2 border-slate-300 p-10 rounded-md">
+      <div className="w-full p-10">
         <h1 className="text-2xl font-semibold mb-5 text-center">Login</h1>
         <form className="form-control">
           <Label htmlFor="email" text="Email" />

@@ -5,7 +5,7 @@ import Label from "../utils/Label";
 const Register = () => {
   return (
     <div className="flex h-screen items-center justify-center">
-      <div className="w-96 border-solid border-2 border-slate-300 p-10 rounded-md">
+      <div className="w-full p-10 rounded-md">
         <h1 className="text-2xl font-semibold mb-5 text-center">Register</h1>
         <form className="form-control">
           <Label htmlFor="email" text="Email" />

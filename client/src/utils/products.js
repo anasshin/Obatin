@@ -1,15 +1,15 @@
 const products = [
   {
-    id: "1",
+    id: 1,
     name: "Obat Batuk",
     category: "Obat",
     image:
       "https://unitkesehatan.ipb.ac.id/wp-content/uploads/2024/01/project-SDIT-10.png",
-    price: 120,
+    price: 120000,
     description: "Deskripsi Obat Batuk",
   },
   {
-    id: "2",
+    id: 2,
     name: "Obat Sakit Kepala",
     category: "Obat",
     image:
@@ -18,7 +18,7 @@ const products = [
     description: "Deskripsi Obat Sakit Kepala",
   },
   {
-    id: "3",
+    id: 3,
     name: "Obat Flu",
     category: "Obat",
     image:
@@ -27,7 +27,7 @@ const products = [
     description: "Deskripsi Obat Flu",
   },
   {
-    id: "4",
+    id: 4,
     name: "Obat Demam",
     category: "Obat",
     image:
@@ -36,7 +36,7 @@ const products = [
     description: "Deskripsi Obat Demam",
   },
   {
-    id: "5",
+    id: 5,
     name: "Obat Maag",
     category: "Obat",
     image:

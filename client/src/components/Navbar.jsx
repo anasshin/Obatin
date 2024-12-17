@@ -1,7 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 import ObatLogo from "../../src/assets/obatin.svg";
 import Notification from "../../src/assets/icons/notification_line.svg";
-import Cart from "../utils/Cart";
+import Cart from "../utils/BtnCart";
+import Back from "../assets/icons/left_fill.svg";
 
 const NavTop = () => {
   const [items] = [3];
@@ -17,9 +18,25 @@ const NavTop = () => {
         <Link to="/">
           <img src={ObatLogo} alt="Obatin" className="w-24" />
         </Link>
-        <Link to="/cart" className="btn btn-circle">
+        <div className="btn btn-circle">
           <Cart items={items} />
+        </div>
+      </div>
+    </>
+  );
+};
+
+const NavBack = ({ address, name }) => {
+  return (
+    <>
+      <div className="navbar ">
+        <Link
+          to={address}
+          className="absolute btn btn-outline btn-circle btn-base"
+        >
+          <img src={Back} className="w-8 h-8" />
         </Link>
+        <p className="text-2xl font-bold mx-auto text-center">{name}</p>
       </div>
     </>
   );
@@ -29,6 +46,18 @@ const Navbar = () => {
   const location = useLocation();
   if (location.pathname === "/login" || location.pathname === "/register") {
     return null;
+  }
+  if (location.pathname === "/profile") {
+    return <NavBack address="/" name="Profile" />;
+  }
+  if (location.pathname === "/account") {
+    return <NavBack address="/profile" name="Account" />;
+  }
+  if (location.pathname === "/orders") {
+    return <NavBack address="/profile" name="Riwayat Transaksi" />;
+  }
+  if (location.pathname === "/address") {
+    return <NavBack address="/profile" name="Alamat Saya" />;
   }
   return <NavTop />;
 };

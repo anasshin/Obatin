@@ -1,7 +1,7 @@
 const AboutCard = () => {
   return (
     <>
-      <div className="bg-slate-700 p-5 rounded-lg shadow-lg">
+      <div className="border border-slate-700 p-5 rounded-lg shadow-lg">
         <h2 className="text-xl font-semibold">AboutCard</h2>
         <p className="text-sm mt-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
